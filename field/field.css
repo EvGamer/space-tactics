@@ -1,0 +1,31 @@
+#field {
+    position: relative;
+    overflow: scroll;
+}
+
+.space-grid .row {
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.space-grid .cell {
+    display: inline-block;
+    background-color: #000000;
+    z-index: 0;
+    border: 1px solid #404040;
+    box-sizing: border-box;
+}
+
+.space-grid .cell:hover {
+    background-color: #222222;
+}
+
+.space-grid .cell:not(:first-child) {
+    border-left: none;
+}
+
+.space-grid>.row:not(:first-child)>.cell {
+    border-top: none;
+}
